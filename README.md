@@ -93,12 +93,28 @@ On se sert souvent de l'espérance dans les jeux de hasards:
 
 Si je propose a un ami de piocher aléatoirement une carte dans un paquet de 52 cartes et que les règles sont les suivantes:
 - S'il tire un As, je lui donne 5€
-- S'il tire une figure, je lui donne 2€
+- S'il tire une Figure, je lui donne 2€
 - S'il tire une tout autre carte, il me donne 1.50€
 
 Pour savoir si le jeu est a son avantage, mon ami devra calculer l'espérnce mathématique du jeu. Pour ce faire, il doit décomposer le probème de la manière suivante:  
-- Le jeu contient 4 As sur 52 cartes, la probabilité de piocher un As est de $\frac{4}{52}$
+
+- Le jeu contient 4 As sur 52 cartes, la probabilité de piocher un As est de $\frac{4}{52}$, soit $\frac{1}{13}$.  
+Il a donc 1 chance sur 13 de gagner 5€  
+
+- Le jeu contient 12 figures, la probabilité de piocher une Figure est de $\frac{12}{52}$, soit $\frac{3}{13}$. 
+Il a donc 3 chances sur 13 de gagner 2€  
+
+- Il reste 36 cartes qui ne sont ni des As ni des Figures, la probabilité de tirer une de ces cartes est de $\frac{36}{52}$, soit $\frac{9}{13}$. 
+Il a donc 9 chances sur 13 de perdre 1.50€.  
+
+Avec ces données on peut maintenant calculer l'espérance:  
+E = $\frac{1}{13}$ x 5 + $\frac{3}{13}$ x 2 + $\frac{9}{13}$ x -1.50  
+E = $\frac{5}{13}$ + $\frac{6}{13}$ - $\frac{13,5}{13}$  
+E = $\frac{2,5}{13}$  
+E $\approx{-0.19}$
+
+On constace que E < 0 donc le jeu est désavantageux pour mon ami. Je n'ai donc plus qu'a espérer qu'il soit nul en mathématiques afin d'empocher son argent ! 
 
 
 *Utilisation:*  
-En python, les variables indépendantes sont utilisées afin d'analyser et comprendre des phénomènes et des relations de données. Ce qui joue un rôle essentiel pour la construction de modèles où l'exploration de données par exemple. 
+En python, les espérances sont utilisées pour quantifier la notion de valeur attendue, notamment en statistiques où en analyse de décision par exemple. Elles permettent de prendre en compte l'incertitude et de calculer des estimations de résultats attendus. 
