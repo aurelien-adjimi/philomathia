@@ -26,8 +26,27 @@ Vous retrouverez dans la partie suivante les définitions accompagnées de quelq
 ## *Veille sur les notions mathématiques du projet*
 
 ### **Les vecteurs**
-*Définition:*
+*Définition:*  
 Un vecteur est un objet mathématique représenté graphiquement sous forme d'une flèche. Il est définit par sa longueur, sa direction et son sens. 
 
-*Exemple*
+*Exemple:*  
 Si nous connaissons le point de départ, ici A et le point d'arrivée, ici B, alors on note le vecteur: $\overrightarrow{AB}$
+
+*Utilisation:*  
+En python, les vecteurs sont utilisés pour représenter et manipuler des données structurées.
+
+### **Les matrices**
+*Définition:*  
+Une matrice est un tableau à deux dimensions formés de lignes et de colonnes. 
+
+*Exemple:*  
+Prenons la matrice M de dimension (2, 3):  
+
+M = \[
+\left[
+\begin{matrix}
+x & y & z \\
+p & q & r 
+\end{matrix}
+\right]
+\]
