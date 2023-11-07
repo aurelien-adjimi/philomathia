@@ -30,4 +30,4 @@ Vous retrouverez dans la partie suivante les définitions accompagnées de quelq
 Un vecteur est un objet mathématique représenté graphiquement sous forme d'une flèche. Il est définit par sa longueur, sa direction et son sens. 
 
 *Exemple*
-Si nous connaissons le point de départ, ici A et le point d'arrivée, ici B, alors on note le vecteur: \overrightarrow{AB}
+Si nous connaissons le point de départ, ici A et le point d'arrivée, ici B, alors on note le vecteur: $\overrightarrow{AB}$
