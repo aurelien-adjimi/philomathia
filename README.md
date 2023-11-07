@@ -66,7 +66,7 @@ En python, les probabilités sont utilisées pour effectuer de nombreuses choses
 Une des lois de probabilités les plus connues est la Loi de Bernouilli. Elle désigne la loi de probabilité d'une variable aléatoire discrète qui prend la valeur 1 avec la probabilité p et 0 avec la probabilité q = 1 - p.  
 Elle peut être utilisée par exemple pour le pile ou face et calculer la probabilité que la pièce retombe sur une des deux faces. 
 Le calcul serait défini ainsi:  
-P(X=x)= p$^x$ ∗ (1−p)$^(1−x)$
+P(X=x)= $p^x$ x (1−p)$^(1−x)$
 
 ### **Les variables indépendantes**
 *Définition:*  
@@ -118,3 +118,131 @@ On constace que E < 0 donc le jeu est désavantageux pour mon ami. Je n'ai donc 
 
 *Utilisation:*  
 En python, les espérances sont utilisées pour quantifier la notion de valeur attendue, notamment en statistiques où en analyse de décision par exemple. Elles permettent de prendre en compte l'incertitude et de calculer des estimations de résultats attendus. 
+
+### **Les variances**
+*Définition:*  
+La variance est utilisée en tant que mesure servant à caractériser la dispersion d’une distribution ou d’un échantillon. Il est possible de l’interpréter comme la dispersion des valeurs par rapport à la moyenne.
+La variance est définie comme la **moyenne des carrés des écarts de la moyenne**.  
+
+*Exemple:*  
+La formule de calcul de la variance est:  
+V = ( Σ (x-μ)² ) / N
+
+*Utilisation:*  
+En pyton, la variance est utilisée notamment en statistiques ou en apprentissage automatique par exemple. 
+
+### **Les écarts types**
+*Définition:*  
+L'écart-type est une mesure de la dispersion des valeurs d'un échantillon statistique ou d'une distribution de probabilité. Il est défini comme la racine carréé de la **variance** vue juste au dessus. 
+
+*Exemple:*  
+La formule de calcul de l'écart-type est:  
+s = $\sqrt{V}$
+
+Ou V est la variance. 
+
+### **Les corrélations linéaires**
+*Définition:*  
+​Le coefficient de corrélation linéaire​, généralement noté "r", quantifie la force du lien linéaire entre les deux caractères d’une distribution. Pour le déterminer, on peut procéder par estimation de son allure graphique ou utiliser une formule mathématique.  
+Le coefficient de corrélation aura toujours une valeur qui se situe dans l'intervalle [-1, 1]. 
+
+*Utilisation:*  
+En pyton, la corrélation linéaire est utilisée pour mesurer la relation linéaire entre deux variables numériques, principalement pour déterminer si deux variables sont corrélées de manière positive ou négative (si le mouvement d'une variable entraine le mouvement de l'autre dans le même sens).
+
+### **Les moyennes**
+*Définition:*  
+La moyenne est une mesure de tendance centrale qui représente le centre d'équilibre d'une distribution.  
+Il existe deux types de moyennes:  
+- La moyenne arithmétique.
+- La moyenne pondérée.
+
+*Exemples:*  
+La moyenne arithmétique est égale a la somme de toutes les données divisée par le nombre de données.
+La moyenne pondérée est égale a la somme des produits des valeurs par leur pondération.
+
+*Utilisation:*  
+En pyton, les moyennes sont utilisées pour présenter la tendance centrale des données. 
+
+### **Les médianes**
+*Définition:*  
+La médiane est la mesure de la tendance centrale qui indique le centre de la série de données. Elle correspond à la valeur qui sépare une distribution ordonnée en deux groupes contenant le même nombre de données. 
+
+*Exemple:*  
+La méthode pour déterminer la médiane varie en fonction de la façon dont les données sont représentées:  
+- Données énumérées
+- Données condensées
+- Données groupées en classes
+
+Dans tous les cas, il faut d'abord calculer le rang de la médiane. 
+
+Rang = $\fact{n + 1}{2}$
+
+Ou n = nombre de données.
+
+*Utilisation:*  
+En pyton, un peu comme la moyenne, la médiane est utilisée pour représenter une mesure de la tendance centrale.
+
+### **Les minimums & maximums**
+*Définition:*  
+Les extremums (minimum & maximum absolus) sont les plus petites et plus grandes valeurs d'une fonction.
+
+*Exemple:*  
+Pour trouver le **maximum** ou le **minimum** d'une fonction f(x) sur un intervalle ]a,b[, il faut:  
+- Déterminer la dérivée de la fonction f'(x).
+- Résoudre l'équation f'(x) = 0.
+- Vérifier qu'il s'agit d'un maximum ou d'un minimum testant d'autres valeurs de la fonction ou en utilisant la dérivée seconde. 
+
+*Utilisation:*  
+En pyton, les extremums sont utilisés pour identifier, résumer, comparer et prendre des décisions basées sur les extrêmes dans les données.
+
+### **Les quartiles**
+*Définition:*  
+Dans une distribution de données placées en ordre croissant, les **quarts** correspondent a quatre sous-groupes de la distribution qui contiennent le même nombre de données.
+Dans une distribution de données placées en ordre croissant, les **quartiles** correspondent aux 3 valeurs qui séparent la distribution en 4 quarts égaux.
+
+- Le premeer quartile, Q1, est la valeur qui sépare le premier quart du reste de la distribution.
+- Le deuxième quartile, Q2, est la valeur qui sépare la distribution en deux parties égales. Soit la médiane.
+- Le troisième quartile, Q3, est la valeur qui sépare le dernier quart du reste de la distribution. 
+
+*Exemple:*  
+Afin de déterminer les quartiles d'une distribution de données il faut:  
+- Placer les données par ordre croissant.
+- Séparer la distribution de données en quatre quarts égaux.
+- Déterminer la valeur des quartiles.
+
+*Utilisation:*  
+En pyton, les quartiles sont des outils statistiques essentiels pour la répartition des données. Ils peuvent détecter des valeurs aberrantes exemple.
+
+### **Boxplot**
+*Définition:*  
+La boxplot, ou encore boite à moustache, est une représentation graphique d'une série statistique qui fait apparaitre bon nombre de certaines des notions que nous venons de voir comme par exemple le **minimum**, le **premier quartile**, la **médiane**, le **troisième quartile** et le **maximum**.  
+
+*Utilisation:*  
+En python, elles permettent d'explorer, visualiser et analyser facilement des données et fournissent des informations importantes sur celles-ci.
+
+### **Histogramme**
+*Définition:*  
+C'est un diagramme servant à représenter par des bandes juxtaposées une distribution d’une statistique sur des données.
+
+*Utilisation:*  
+En python, on se sert des histogrammes afin représenter une distribution de données numériques. 
+
+### ** Théorème Central Limite**  
+*Définition:*  
+Le théorème central limite établit la convergence d’une suite de variables définies sur le même espace vers une loi normale centrée réduite. Plus on additionne de variables aléatoires indépendantes et identiquement distribuées, plus la distribution de probabilité de la nouvelle variable sera proche d’une distribution normale.
+
+### **Les dérivée**
+*Définition:*  
+La dérivée d'une fonction est le moyen de déterminer combien cette fonction varie quand la quantité dont elle dépend change. Plus précisément, une dérivée est une expression (numérique ou algébrique) donnant le rapport entre les variations infinitésimales de la fonction et les variations infinitésimales de son argument.
+
+*Utilisation:*
+En python, il permet d'approximer la distribution moyenne d'échantillon et facilite les analyses statistiques.
+
+*Exemple:*  
+Afin de déterminer les quartiles d'une distribution de données il faut:  
+- Placer les données par ordre croissant.
+- Séparer la distribution de données en quatre quarts égaux.
+- Déterminer la valeur des quartiles.
+
+*Utilisation:*  
+En pyton, elles permettent de mesurer la variation d'une fonction en rapport à une variable indépendante et donc, de déterminer la pente, le taux de changement et la convexité des fonctions.
