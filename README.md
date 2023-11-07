@@ -42,11 +42,14 @@ Une matrice est un tableau à deux dimensions formés de lignes et de colonnes.
 *Exemple:*  
 Prenons la matrice M de dimension (2, 3):  
 
-M = \[
+M = 
+$$ 
+\[
 \left[
 \begin{matrix}
 x & y & z \\
 p & q & r \\
 \end{matrix}
 \right]
-\]
+\] 
+$$
