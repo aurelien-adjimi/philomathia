@@ -46,7 +46,7 @@ M = \[
 \left[
 \begin{matrix}
 x & y & z \\
-p & q & r 
+p & q & r \\
 \end{matrix}
 \right]
 \]
