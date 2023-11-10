@@ -24,6 +24,7 @@ Avant de commencer les Jobs que vous pouvez voir dans ce Repository, nous avons 
 Vous retrouverez dans la partie suivante les définitions accompagnées de quelques exemples pour chacune de ces notions mathématiques.
 
 ## *L'importance des bases mathématiques pour l'apprentissage de la DataScience*
+Il est important de connaitre les bases des mathématiques pour l'apprentissage de la Data Science car ce sont les mathématiques qui vont nous permettre de manipuler, analyser et comparer un grand nombre de données.
 
 ## *Veille sur les notions mathématiques du projet*
 
